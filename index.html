@@ -4,32 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>りんかちゃん</title>
+
   <style>
-    body {
-      background: #ffffff;
-      color: #000000;
-      font-family: serif;
-      line-height: 1.8;
-      padding: 2em;
+   body {
+  background: #fff0f5;  /* 桜色（LavenderBlush） */
+  color: #333;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  line-height: 1.9;
+  padding: 2em 1em;
+}
+
+    .letter {
       max-width: 720px;
       margin: auto;
+      background: #ffffff;
+      padding: 3em;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
     }
+
+    h1 {
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 2em;
+      letter-spacing: 0.1em;
+    }
+    @media screen and (max-width: 600px) {
+  .letter {
+    padding: 1.5em;
+  }
+
+  body {
+    padding: 1.5em 0.8em;
+  }
+}
+    /* 桜の花びら */
+.sakura {
+  position: fixed;
+  top: -10%;
+  color: rgba(255, 182, 193, 0.6);
+  font-size: 22px;
+  animation: fall linear infinite;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) translateX(40px) rotate(360deg);
+  }
+}
+
+.letter {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 3em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
   </style>
 </head>
+
 <body>
+
+<span class="sakura" style="left:20%; animation-duration: 24s;">🌸</span>
+<span class="sakura" style="left:40%; animation-duration: 14s;">🌸</span>
+<span class="sakura" style="left:60%; animation-duration: 18s;">🌸</span>
+<span class="sakura" style="left:80%; animation-duration: 23s;">🌸</span>
+<div class="letter">
 
 <p>
 りんかちゃんへ<br><br>
+</p>
 
 <p>
 まずは、卒業と内定おめでとうございます。<br>
-そして、ありがとうございました。<br><br>
+そして、ありがとうございました。<br>
+</p>
 
 <p>
 僕のアルバイト生活は、りんかちゃんにバックドアの開け方やINの仕方を教えてもらったところから始まった気がします。
 最初に話したのに、僕が人見知りなので全然仲良くなれなかったですね。
-終わりが近づくにつれて少しだけ話すようになったけれど、もっと早く仲良くなれていればというのが心残りです。
-あと、りんかちゃんっていう呼び方は、自分でも本当にきもいって分かっているけれど、呼び方を変えるタイミング逃したので許してください。<br><br>
+終わりが近づくにつれて少しだけ話すようになったけれど、もっと早く仲良くなれていればというのが心残りです。<br>
+あと、りんかちゃんっていう呼び方は、自分でも本当にきもいって分かっているけれど、呼び方を変えるタイミング逃したので許してください。<br>
+</p>
 
 <p>
 今年は多くの人が卒展なので、残された僕たちは4月から忙しくもなり、寂しくもなります。
@@ -38,25 +101,22 @@
 それゆえに、働くことが好きなわけじゃないけれど、みんなで一緒に働く機会がもう訪れないと思うと喪失感がありますね。
 そう思いませんか？早く解放されたいですか？置いていかれる方は想像の3倍くらいは寂しいもんです。
 僕は友達がいなくなるため、初詣と節分で全員が留年することを願っていましたが、思い通りにはなりませんでした。<br>
-でも、皆さんが幸せならOKです！！<br><br>
+でも、皆さんが幸せならOKです！！<br>
+</p>
 
 <p>
 さて、伝えたいことはたくさんありますが、悲しいことに時間は有限なのでそろそろ終わります。<br>
 人生140年時代、まだまだ長いですが楽しみましょう！！<br>
 最後に、来世もみんなで一緒にアルバイトできると嬉しいです。<br>
-楽しい時間をありがとうございました。<br>社会人ファイト！！！<br>
-
-<p>
-芋田楠知<br>
-
+楽しい時間をありがとうございました。<br>
+社会人ファイト！！！<br>
 </p>
 
-<p style="margin-top:3em;">
-（ちなみに、僕は機械音痴でこのwebページのことのこともよくわかっていないので、良ければスクショか保存してください）
+<p style="margin-top:3em; font-size:0.9em; color:#666;">
+（ちなみに、僕は機械音痴でこのwebページのこともよくわかっていないので、良ければスクショか保存してください）
 </p>
+
+</div>
 
 </body>
 </html>
-
-
-
